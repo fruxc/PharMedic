@@ -1,0 +1,300 @@
+section {
+  padding: 85px 0;
+}
+
+.row {
+  margin: 2px;
+}
+
+form {
+  padding: 15px;
+}
+
+.first {
+  display: table;
+  position: relative;
+  z-index: 0;
+  background-image: url("../assets/images/PharMedic.png");
+  background-size: cover;
+  padding: 150px 0;
+  color: #fff;
+  width: 100%;
+  height: 100vh;
+}
+
+.first .container {
+  position: static;
+  right: 0px;
+  width: 60%;
+  text-align: center;
+  z-index: 1;
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  color: white;
+}
+
+.first-brand {
+  margin-bottom: 75px;
+  display: inline-block;
+}
+
+.first-brand h1 {
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.first-brand:hover {
+  opacity: .75;
+}
+
+.firstTag {
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  font-size: 26px;
+  margin: 45px 0 75px 0;
+  color: #fff;
+}
+
+.container .btn {
+  background-color: #289cfc;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  color: #fff;
+  padding: 15px 45px;
+  border-radius: 50px;
+  margin: 3px;
+}
+
+.container .btn:hover {
+  background-color: #af2674;
+  color: #fff;
+}
+
+.container .btn:focus {
+  color: #fff;
+}
+
+.container .btn-ghost {
+  border: 3px solid #fff;
+  background-color: transparent;
+}
+
+.container .btn-ghost:hover {
+  background-color: #fff;
+  color: #199EB8;
+}
+
+
+/* For header tab*/
+#header {
+  background: #289cfc;
+  height: 70px;
+  position: fixed;
+  top: 0px;
+  overflow: hidden;
+  z-index: 1;
+  width: 100%;
+}
+
+#header .social-nav {
+  margin-top: 15px;
+}
+
+#header .social-nav a {
+  font-size: 24px;
+  margin-left: 15px;
+  color: #fff;
+}
+
+#header .social-nav a:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.nav-menu,
+.nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu ul {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  z-index: 99;
+}
+
+.nav-menu li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-menu>li {
+  float: left;
+}
+
+.nav-menu li:hover>ul,
+.nav-menu li.sfHover>ul {
+  display: block;
+}
+
+.nav-menu ul ul {
+  top: 0;
+  left: 100%;
+}
+
+.nav-menu ul li {
+  min-width: 180px;
+}
+
+#nav-menu-container {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  #nav-menu-container {
+    display: none;
+  }
+}
+
+.nav-menu a {
+  padding: 22px 15px 18px 15px;
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  outline: none;
+}
+
+.nav-menu a:hover,
+.nav-menu li:hover>a,
+.nav-menu .menu-active>a {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.nav-menu ul {
+  margin: 4px 0 0 15px;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.08);
+}
+
+.nav-menu ul li {
+  background: #fff;
+  border-top: 1px solid #f4f4f4;
+}
+
+.nav-menu ul li:first-child {
+  border-top: 0;
+}
+
+.nav-menu ul li:hover {
+  background: #199EB8;
+  transition: 0.3s;
+}
+
+.nav-menu ul li a {
+  color: #333;
+  transition: none;
+  padding: 10px 15px;
+}
+
+.nav-menu ul li a:hover {
+  color: #fff;
+}
+
+.nav-menu ul ul {
+  margin: 0;
+}
+
+.stats-row {
+  margin-top: 65px;
+}
+
+.stats-col .circle {
+  display: inline-block;
+  width: 160px;
+  height: 160px;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  color: #666;
+  border: 6px solid #199EB8;
+  border-radius: 50%;
+  padding: 55px 25px 0 25px;
+  position: relative;
+}
+
+.stats-col .circle .stats-no {
+  color: #fff;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  top: -25px;
+  right: -15px;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  background-color: #E04F00;
+  position: absolute;
+  border-radius: 50%;
+  font-weight: 700;
+}
+
+.add input,
+select {
+  border: 1px solid #199eb8;
+}
+
+form {
+  margin-top: 40px;
+}
+
+.modal-footer {
+  place-content: center;
+}
+
+.modal-footer .btn-success {
+  background-color: green;
+}
+
+
+.contentDiv {
+  border: 1px solid #199EB8;
+  padding: 0px;
+}
+
+table {
+  border: 1px solid #199EB8;
+}
+
+.view {
+  background-color: #edf6ff;
+}
+
+/* For responsive */
+@media (max-width: 61.9em) {
+  .section {
+    padding: 35px 0;
+  }
+
+  .first-brand {
+    margin-bottom: 35px;
+  }
+
+  .first {
+    padding: 75px 0;
+  }
+
+  .firstTag {
+    font-size: 24px;
+    margin: 35px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #header {
+    height: 30px;
+  }
+}
