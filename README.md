@@ -19,11 +19,11 @@ npm start
 
 ### Some UI Screenshot
 
-![First] (https://github.com/fruxc/PharMedic/blob/main/src/assets/images/1.png?raw=true "first")
+![First](https://github.com/fruxc/PharMedic/blob/main/src/assets/images/1.png?raw=true "first")
 
 
-![Second] (https://github.com/fruxc/PharMedic/blob/main/src/assets/images/2.png?raw=true "second")
+![Second](https://github.com/fruxc/PharMedic/blob/main/src/assets/images/2.png?raw=true "second")
 
 
-![Third] (https://github.com/fruxc/PharMedic/blob/main/src/assets/images/3.png?raw=true "third")
+![Third](https://github.com/fruxc/PharMedic/blob/main/src/assets/images/3.png?raw=true "third")
 
