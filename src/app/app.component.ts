@@ -4,7 +4,6 @@ import { PresModel } from './model/PresModel';
 import * as data from '../assets/json/Country.json';
 import { FirebaseService } from './service/firebase.service';
 import { AngularFireStorage } from '@angular/fire/storage';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -24,8 +23,7 @@ export class AppComponent {
   constructor(
     private formBuilder: FormBuilder,
     private firebaseService: FirebaseService,
-    private fireStorage: AngularFireStorage,
-    private router: Router
+    private fireStorage: AngularFireStorage
   ) {}
   // tslint:disable: typedef
   // tslint:disable-next-line: use-lifecycle-interface
@@ -63,8 +61,6 @@ export class AppComponent {
     temp.age = this.calculateAge(temp.dateOfBirth);
     const path = '/images' + Math.random() + this.filePath;
     temp.prescriptionDetail = path;
-    this.edit = false;
-
     // creating record and uploading files
     this.fireStorage.upload(path, this.filePath);
 
@@ -72,6 +68,7 @@ export class AppComponent {
       .createPrescription(temp)
       .catch((err) => console.log(err));
     this.initializeForm();
+    this.edit = false;
   }
 
   calculateAge(dateOfBirth: Date) {
@@ -123,8 +120,6 @@ export class AppComponent {
   }
 
   onDelete(prescription: any) {
-    this.firebaseService.deletePrescription(prescription).then(() => {
-      location.reload();
-    });
+    this.firebaseService.deletePrescription(prescription);
   }
 }
