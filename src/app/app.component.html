@@ -224,19 +224,45 @@
                 </button>
               </td>
               <td>
-                <a href="#add" (click)="onEdit(data)"
-                  ><i class="fa fa-pencil-square-o"></i
-                ></a>
+                <button>
+                  <a href="#add" (click)="onEdit(data)"
+                    ><i class="fa fa-pencil-square-o"></i
+                  ></a>
+                </button>
               </td>
               <td>
-                <a href="#delete" (click)="onDelete(data)"
-                  ><i class="fa fa-trash-o"></i
-                ></a>
+                <div class="modal" id="deleteModal">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-body">Data Deleted Successfully!</div>
+                      <div class="modal-content">
+                        Deleted data of {{ data.payload.doc.data().firstName }}
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-success"
+                          data-dismiss="modal"
+                        >
+                          OK
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  type="submit"
+                  data-toggle="modal"
+                  data-target="#deleteModal"
+                >
+                  <a href="#delete" (click)="onDelete(data)"
+                    ><i class="fa fa-trash-o"></i
+                  ></a>
+                </button>
               </td>
             </tr>
           </tbody>
         </table>
-
         <div class="container" *ngIf="downloadURL | async; let url">
           <img
             height="720"
