@@ -15,7 +15,7 @@ _👀 Run easily on any machine_
 npm start
 ```
 
-### Great! Hassle Free Way of Running a Angular Application with firebase.
+### Great! Hassle Free Way of Running an Angular Application with firebase.
 
 ### Some UI Screenshot
 
